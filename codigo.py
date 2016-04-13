@@ -16,3 +16,8 @@ print('original:')
 print(data[:3, 36:])
 print('doubledata:')
 print(doubledata[:3, 36:])
+
+tripledata = doubledata + data
+
+print('tripledata:')
+print(tripledata[:3, 36:])
