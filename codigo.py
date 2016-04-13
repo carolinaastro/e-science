@@ -33,3 +33,5 @@ print('maximum inflammation for patient 0:', patient_0.max())
 print('maximum inflammation for patient 2:', data[2, :].max())
 
 print(data.mean(axis=0))
+
+print(data.mean(axis=0).shape)
