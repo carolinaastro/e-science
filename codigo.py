@@ -27,3 +27,5 @@ print('maximum inflammation:', data.max())
 print('minimum inflammation:', data.min())
 print('standard deviation:', data.std())
 
+patient_0 = data[0, :] # 0 on the first axis, everything on the second
+print('maximum inflammation for patient 0:', patient_0.max())
