@@ -10,3 +10,9 @@ print(data[5:10, 0:10])
 small = data[:3, 36:]
 print('small is:')
 print(small)
+
+doubledata = data * 2.0
+print('original:')
+print(data[:3, 36:])
+print('doubledata:')
+print(doubledata[:3, 36:])
