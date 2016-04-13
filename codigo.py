@@ -21,3 +21,9 @@ tripledata = doubledata + data
 
 print('tripledata:')
 print(tripledata[:3, 36:])
+
+print('mean inflammation:'data.mean())
+print('maximum inflammation:', data.max())
+print('minimum inflammation:', data.min())
+print('standard deviation:', data.std())
+
