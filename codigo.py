@@ -22,10 +22,12 @@ tripledata = doubledata + data
 print('tripledata:')
 print(tripledata[:3, 36:])
 
-print('mean inflammation:'data.mean())
+print('mean inflammation:', data.mean())
 print('maximum inflammation:', data.max())
 print('minimum inflammation:', data.min())
 print('standard deviation:', data.std())
 
 patient_0 = data[0, :] # 0 on the first axis, everything on the second
 print('maximum inflammation for patient 0:', patient_0.max())
+
+print('maximum inflammation for patient 2:', data[2, :].max())
