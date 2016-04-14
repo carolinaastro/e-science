@@ -32,6 +32,10 @@ print('maximum inflammation for patient 0:', patient_0.max())
 
 print('maximum inflammation for patient 2:', data[2, :].max())
 
-print(data.mean(axis=0))
+print(data.mean(axis=0)) #média diária de inflamações
 
-print(data.mean(axis=0).shape)
+print(data.mean(axis=0).shape) #quantidade de dias
+
+print(data.mean(axis=1)) #média de inflamação por paciente
+
+print(data.mean(axis=1).shape) #quantidade de pacientes
