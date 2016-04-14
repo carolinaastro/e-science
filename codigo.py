@@ -109,3 +109,9 @@ print('last three characters:', element[3:6])
 #What is element[-1]? Representa o ultimo elemento 'n'
 #What is element[-2]? Representa o penultimo elemento 'e'
 #Given those answers, explain what element[1:-1] does. Printa do elemento 1 até o penultimo, neste caso, 'xyge'
+
+
+#Thin slices
+#The expression element[3:3] produces an empty string, i.e., a string that contains no characters. 
+#If data holds our array of patient data, what does data[3:3, 4:4] produce? Um vetor vazio pois o intervalo de um elemento até ele mesmo eh nulo.
+#What about data[3:3, :]? Tambem eh vazio pois nao tem como definir qual eh o intervalo entre a posicao inicial nula ate o final do array. 
