@@ -48,4 +48,9 @@ ave_inflammation = data.mean(axis=0)
 ave_plot = matplotlib.pyplot.plot(ave_inflammation)
 matplotlib.pyplot.show() #grafico da evolucao da inflamacao com o tempo
 
+max_plot = matplotlib.pyplot.plot(data.max(axis=0))
+matplotlib.pyplot.show() #grafico da inflamacao maxima no decorrer dos dias
+min_plot = matplotlib.pyplot.plot(data.min(axis=0))
+matplotlib.pyplot.show() #grafico da inflamacao minima no decorrer dos dias
+
 
