@@ -32,10 +32,16 @@ print('maximum inflammation for patient 0:', patient_0.max())
 
 print('maximum inflammation for patient 2:', data[2, :].max())
 
-print(data.mean(axis=0)) #média diária de inflamações
+print(data.mean(axis=0)) #media diaria de inflamacoes
 
 print(data.mean(axis=0).shape) #quantidade de dias
 
-print(data.mean(axis=1)) #média de inflamação por paciente
+print(data.mean(axis=1)) #media de inflamacao por paciente
 
 print(data.mean(axis=1).shape) #quantidade de pacientes
+
+import matplotlib.pyplot
+image  = matplotlib.pyplot.imshow(data)
+matplotlib.pyplot.show() #o objetivo eh mostrar os dados na forma grafica
+
+
