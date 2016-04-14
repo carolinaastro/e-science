@@ -126,3 +126,25 @@ matplotlib.pyplot.ylabel('standart deviation')
 matplotlib.pyplot.xlabel('days')
 matplotlib.pyplot.show()
 
+
+#Moving plots around
+#Modify the program to display the three plots on top of one another instead of side by side.
+
+fig = matplotlib.pyplot.figure(figsize=(10.0, 6.0))
+#ao inves de 1 linha e 3 colunas, 1 coluna e 3 linhas
+axes1 = fig.add_subplot(3, 1, 1)
+axes2 = fig.add_subplot(3, 1, 2)
+axes3 = fig.add_subplot(3, 1, 3)
+
+axes1.set_ylabel('average')
+axes1.plot(data.mean(axis=0))
+
+axes2.set_ylabel('max')
+axes2.plot(data.max(axis=0))
+
+axes3.set_ylabel('min')
+axes3.plot(data.min(axis=0))
+
+fig.tight_layout()
+
+matplotlib.pyplot.show()
