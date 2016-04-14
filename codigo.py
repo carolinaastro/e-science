@@ -86,3 +86,12 @@ age = age - 20
 
 print 'Nova massa', mass
 print 'Nova idade', age
+
+#Sorting out references
+#What does the following program print out?
+
+first, second = 'Grace', 'Hopper'
+third, fourth = second, first
+print(third, fourth)
+
+#the program print => third=second= Hopper and fourth=first= Grace, so, Hopper and Grace
