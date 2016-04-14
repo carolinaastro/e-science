@@ -76,3 +76,13 @@ axes3.plot(data.min(axis=0))
 fig.tight_layout()
 
 matplotlib.pyplot.show() #plot da media, minimo e maxima inflamacao por tempo na mesma figura
+
+#Check your understanding
+
+mass = 47.5
+age = 122
+mass = mass * 2.0
+age = age - 20
+
+print 'Nova massa', mass
+print 'Nova idade', age
