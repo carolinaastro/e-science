@@ -102,16 +102,27 @@ element = 'oxygen'
 print('first three characters:', element[0:3])
 print('last three characters:', element[3:6])
 
-#What is the value of element[:4]? Todos os elementos até o quarto: 'oxyg'
+#What is the value of element[:4]? Todos os elementos ate o quarto: 'oxyg'
 #What about element[4:]? Todos os elementos a partir do quarto, 'en'
 #Or element[:]? 'oxygen'
 
 #What is element[-1]? Representa o ultimo elemento 'n'
 #What is element[-2]? Representa o penultimo elemento 'e'
-#Given those answers, explain what element[1:-1] does. Printa do elemento 1 até o penultimo, neste caso, 'xyge'
+#Given those answers, explain what element[1:-1] does. Printa do elemento 1 ate o penultimo, neste caso, 'xyge'
 
 
 #Thin slices
 #The expression element[3:3] produces an empty string, i.e., a string that contains no characters. 
-#If data holds our array of patient data, what does data[3:3, 4:4] produce? Um vetor vazio pois o intervalo de um elemento até ele mesmo eh nulo.
+#If data holds our array of patient data, what does data[3:3, 4:4] produce? Um vetor vazio pois o intervalo de um elemento ate ele mesmo eh nulo.
 #What about data[3:3, :]? Tambem eh vazio pois nao tem como definir qual eh o intervalo entre a posicao inicial nula ate o final do array. 
+
+
+#Make your own plot
+#Create a plot showing the standard deviation (numpy.std) of the inflammation data for each day across all patients.
+
+std_inflammation = numpy.std(data,axis=0)
+std_plot = matplotlib.pyplot.plot(std_inflammation)
+matplotlib.pyplot.ylabel('standart deviation')
+matplotlib.pyplot.xlabel('days')
+matplotlib.pyplot.show()
+
