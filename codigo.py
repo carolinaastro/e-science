@@ -44,4 +44,8 @@ import matplotlib.pyplot
 image  = matplotlib.pyplot.imshow(data)
 matplotlib.pyplot.show() #o objetivo eh mostrar os dados na forma grafica
 
+ave_inflammation = data.mean(axis=0)
+ave_plot = matplotlib.pyplot.plot(ave_inflammation)
+matplotlib.pyplot.show() #grafico da evolucao da inflamacao com o tempo
+
 
