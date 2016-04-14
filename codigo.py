@@ -95,3 +95,17 @@ third, fourth = second, first
 print(third, fourth)
 
 #the program print => third=second= Hopper and fourth=first= Grace, so, Hopper and Grace
+
+#Slicing strings
+
+element = 'oxygen'
+print('first three characters:', element[0:3])
+print('last three characters:', element[3:6])
+
+#What is the value of element[:4]? Todos os elementos até o quarto: 'oxyg'
+#What about element[4:]? Todos os elementos a partir do quarto, 'en'
+#Or element[:]? 'oxygen'
+
+#What is element[-1]? Representa o ultimo elemento 'n'
+#What is element[-2]? Representa o penultimo elemento 'e'
+#Given those answers, explain what element[1:-1] does. Printa do elemento 1 até o penultimo, neste caso, 'xyge'
