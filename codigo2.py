@@ -17,4 +17,6 @@ print b
 c = 'Newton'
 print c[::-1] #printa tudo na ordem inversa
 
-#to tentando fazer um merge rs
+#to tentando fazer um merge rs mas ta muito complicado
+
+print b*2
