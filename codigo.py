@@ -130,7 +130,7 @@ matplotlib.pyplot.show()
 #Moving plots around
 #Modify the program to display the three plots on top of one another instead of side by side.
 
-fig = matplotlib.pyplot.figure(figsize=(10.0, 6.0))
+fig = matplotlib.pyplot.figure(figsize=(10.0, 7.0))
 #ao inves de 1 linha e 3 colunas, 1 coluna e 3 linhas
 axes1 = fig.add_subplot(3, 1, 1)
 axes2 = fig.add_subplot(3, 1, 2)
